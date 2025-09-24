@@ -2,10 +2,10 @@ import streamlit as st
 import pickle
 import numpy as np
 
-with open("assets/model.pkl", "rb") as file:
+with open("Assets/model.pkl", "rb") as file:
     model = pickle.load(file)
 
-with open("assets/label_encoder.pkl", "rb") as file:
+with open("Assets/label_encoder.pkl", "rb") as file:
     encoder = pickle.load(file)
 
 st.set_page_config(page_title="Shoe Size Prediction", page_icon="👟", layout="centered")
